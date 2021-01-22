@@ -1,7 +1,7 @@
 def get_dropdown_list_stats():
     dropdown_list = [
-      {'label': 'Plato', 'value': 'plato'},
-      {'label': 'Aristotle', 'value': 'aristotle'},
+      {'label': 'Plato', 'value': 'Plato'},
+      {'label': 'Aristotle', 'value': 'Aristotle'},
       {'label': 'Locke', 'value': 'Locke'},
       {'label': 'Hume', 'value': 'Hume'},
       {'label': 'Berkeley', 'value': 'Berkeley'},
