@@ -167,7 +167,7 @@ def generate_stats_2(selection_value, checkbox_values):#, df=df, classifier_dict
     output_list.append(html.Center("Note that word pairs here could be connected by any number of stopwords such as 'of' or 'the.'"))
   return output_list
 
-  server = app.server
+server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=True)
