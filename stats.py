@@ -40,10 +40,10 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # for school in df['school'].unique():
 #   classifier_dict[school] = 'school'
 
-keys = get_keys('api_keys.json')
-username = keys['s3_username']
-access_key = keys['s3_access_key']
-secret = keys['s3_secret_key']
+# keys = get_keys('api_keys.json')
+# username = keys['s3_username']
+# access_key = keys['s3_access_key']
+# secret = keys['s3_secret_key']
 
 # s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 
