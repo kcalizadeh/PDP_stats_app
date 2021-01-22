@@ -4,7 +4,8 @@ import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 import numpy as np
-import json 
+# import json 
+from os import environ
 import boto3
 
 from dash.dependencies import Input, Output, State
@@ -44,11 +45,13 @@ username = keys['s3_username']
 access_key = keys['s3_access_key']
 secret = keys['s3_secret_key']
 
+# s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+
 s3 = boto3.resource(
     service_name='s3',
     region_name='us-west-1',
-    aws_access_key_id=access_key,
-    aws_secret_access_key=secret
+    aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
+    aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY']
 )
 
 
