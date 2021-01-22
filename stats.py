@@ -20,12 +20,12 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 
 
-s3 = boto3.resource(
-    service_name='s3',
-    region_name='us-west-1',
-    aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
-    aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY']
-)
+# s3 = boto3.resource(
+#     service_name='s3',
+#     region_name='us-west-1',
+#     aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
+#     aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY']
+# )
 
 
 
@@ -71,8 +71,8 @@ app.layout = html.Div(
 def generate_stats_1(selection_value, checkbox_values):#, df=df, classifier_dict=classifier_dict):
   output_list = [html.Br()]
   if selection_value:
-    origin = s3.Bucket('philosophydata').Object(f'stats/{selection_value}_stats.pkl').get()
-    source_dict = pickle.loads(origin['Body'].read())
+    with open(f'stats_pickles\{selection_value}_stats.pkl', 'rb') as st_dict:
+      source_dict = pickle.load(st_dict)
   if 'TXTS' in checkbox_values and selection_value:
     title_list = source_dict['title_list']
     output_statement = f'**Titles in the Corpus:** {title_list}.'
@@ -104,8 +104,8 @@ def generate_stats_1(selection_value, checkbox_values):#, df=df, classifier_dict
 def generate_stats_2(selection_value, checkbox_values):#, df=df, classifier_dict=classifier_dict):
   output_list = [html.Br()]
   if selection_value:
-    origin = s3.Bucket('philosophydata').Object(f'stats/{selection_value}_stats.pkl').get()
-    source_dict = pickle.loads(origin['Body'].read())
+    with open(f'stats_pickles\{selection_value}_stats.pkl', 'rb') as st_dict:
+      source_dict = pickle.load(st_dict)
   if 'TXTS' in checkbox_values and selection_value:
     title_list = source_dict['title_list']
     output_statement = f'**Titles in the Corpus:** {title_list}.'
