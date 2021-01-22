@@ -1,1 +1,1 @@
-web: python w2v.py
+web: python stats.py

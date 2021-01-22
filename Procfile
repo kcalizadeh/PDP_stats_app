@@ -1,1 +1,1 @@
-web: gunicorn w2v:server --timeout 300
+web: gunicorn stats:server --timeout 300

@@ -5,6 +5,7 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import numpy as np
 import json 
+import boto3
 
 from dash.dependencies import Input, Output, State
 # import matplotlib.pyplot as plt
@@ -30,12 +31,6 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # with open('model_data/classifier.pkl', 'rb') as class_dict:
 #   classifier_dict = pickle.load(class_dict)
 
-search_bar = html.Div(id="w2v-bar-container", children=
-    [
-        dcc.Dropdown(id="stats-option", 
-                    options=get_dropdown_list_stats())
-    ])
-
 # classifier_dict = {}
 # for author in df['author'].unique():
 #   classifier_dict[author] = 'author'
@@ -48,8 +43,6 @@ keys = get_keys('api_keys.json')
 username = keys['s3_username']
 access_key = keys['s3_access_key']
 secret = keys['s3_secret_key']
-
-import boto3
 
 s3 = boto3.resource(
     service_name='s3',
