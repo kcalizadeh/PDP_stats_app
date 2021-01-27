@@ -42,7 +42,7 @@ app.layout = html.Div(
                                         'FREQ', 'BGRAM', 'TXTS'],
                                   labelStyle={'display': 'inline-block', 
                                               'border-spacing': '2px'}),  
-        #               html.Div(id="stats-output-1", children=[])
+                      html.Div(id="stats-output-1", children=[])
         # dbc.Row(
         #     [
         #         dbc.Col(html.Div([
