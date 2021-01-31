@@ -13,6 +13,8 @@ def get_dropdown_list_stats():
  {'label': 'Being And Time', 'value': 'Being And Time'},
  {'label': 'Berkeley', 'value': 'Berkeley'},
  {'label': 'Capitalism', 'value': 'capitalism'},
+ {'label': 'Capital', 'value': 'Kapital'},
+
  {'label': 'Communism', 'value': 'communism'},
  {'label': 'Continental', 'value': 'continental'},
  {'label': 'Critique Of Judgement', 'value': 'Critique Of Judgement'},
@@ -41,7 +43,7 @@ def get_dropdown_list_stats():
  {'label': 'Hume', 'value': 'Hume'},
  {'label': 'Husserl', 'value': 'Husserl'},
  {'label': 'Kant', 'value': 'Kant'},
- {'label': 'Capital', 'value': 'Kapital'},
+#  {'label': 'Capital', 'value': 'Kapital'},
  {'label': 'Keynes', 'value': 'Keynes'},
  {'label': 'Kripke', 'value': 'Kripke'},
  {'label': 'Leibniz', 'value': 'Leibniz'},
