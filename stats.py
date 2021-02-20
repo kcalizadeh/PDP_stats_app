@@ -115,7 +115,7 @@ def generate_stats_2(selection_value, checkbox_values):#, df=df, classifier_dict
     output_list.append(dcc.Markdown(output_statement))
   if 'AWL' in checkbox_values and selection_value:
     average_word_length = source_dict['mean_word_length']
-    output_statement = f'**Average Word Length:** {average_word_length, 2} characters'
+    output_statement = f'**Average Word Length:** {average_word_length} characters'
     output_list.append(dcc.Markdown(output_statement))
   if 'NUW' in checkbox_values and selection_value:
     num_unique, total_num = source_dict['num_unique']
