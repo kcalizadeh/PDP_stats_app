@@ -5,8 +5,6 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 
 import numpy as np
-# import os
-# import boto3
 import pickle
 import plotly.express as px
 
@@ -18,14 +16,6 @@ external_stylesheets = [dbc.themes.CERULEAN]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-
-
-# s3 = boto3.resource(
-#     service_name='s3',
-#     region_name='us-west-1',
-#     aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
-#     aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY']
-# )
 
 
 
@@ -68,7 +58,7 @@ app.layout = html.Div(
 @app.callback(Output(component_id="stats-output-1", component_property="children"),
               [Input(component_id="stats-selection_1", component_property="value"),
               Input(component_id='stats-options_1', component_property="value")])
-def generate_stats_1(selection_value, checkbox_values):#, df=df, classifier_dict=classifier_dict):
+def generate_stats_1(selection_value, checkbox_values):
   output_list = [html.Br()]
   if selection_value:
     with open(f'stats_pickles/{selection_value}_stats.pkl', 'rb') as st_dict:
