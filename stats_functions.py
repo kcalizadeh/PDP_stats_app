@@ -1,4 +1,4 @@
-def get_dropdown_list_search():
+def get_dropdown_list_stats():
     dropdown_list = [{'label': 'A General Theory Of Employment, Interest, And Money',
   'value': 'A General Theory Of Employment, Interest, And Money'},
  {'label': 'A Treatise Concerning The Principles Of Human Knowledge',
