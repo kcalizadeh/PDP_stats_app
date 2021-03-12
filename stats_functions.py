@@ -1,4 +1,4 @@
-def get_dropdown_list_stats():
+def get_dropdown_list_search():
     dropdown_list = [{'label': 'A General Theory Of Employment, Interest, And Money',
   'value': 'A General Theory Of Employment, Interest, And Money'},
  {'label': 'A Treatise Concerning The Principles Of Human Knowledge',
@@ -38,6 +38,7 @@ def get_dropdown_list_stats():
   'value': 'Essay Concerning Human Understanding'},
  {'label': 'Essential Works Of Lenin', 'value': 'Essential Works Of Lenin'},
  {'label': 'Ethics', 'value': 'Ethics'},
+ {'label': 'Feminism', 'value': 'Feminism'},
  {'label': 'Fichte', 'value': 'Fichte'},
  {'label': 'Foucault', 'value': 'Foucault'},
  {'label': 'German Idealism', 'value': 'German Idealism'},
@@ -57,6 +58,7 @@ def get_dropdown_list_stats():
  {'label': 'Malebranche', 'value': 'Malebranche'},
  {'label': 'Marcus Aurelius', 'value': 'Marcus Aurelius'},
  {'label': 'Marx', 'value': 'Marx'},
+ {'label': 'Mary Wollstonecraft', 'value': 'Mary Wollstonecraft'},
  {'label': 'Meditations', 'value': 'Meditations'},
  {'label': 'Meditations On First Philosophy',
   'value': 'Meditations On First Philosophy'},
@@ -114,6 +116,8 @@ def get_dropdown_list_stats():
  {'label': 'Tractatus Logico-Philosophicus',
   'value': 'Tractatus Logico-Philosophicus'},
  {'label': 'Twilight Of The Idols', 'value': 'Twilight Of The Idols'},
+ {'label': 'Vindication Of The Rights Of Woman',
+  'value': 'Vindication Of The Rights Of Woman'},
  {'label': 'Wittgenstein', 'value': 'Wittgenstein'},
  {'label': 'Writing And Difference', 'value': 'Writing And Difference'}]
     return dropdown_list
