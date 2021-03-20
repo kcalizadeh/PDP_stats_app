@@ -10,6 +10,7 @@ def get_dropdown_list_stats():
  {'label': 'Aristotle', 'value': 'Aristotle'},
  {'label': 'Aristotle - Complete Works',
   'value': 'Aristotle - Complete Works'},
+ {'label': 'Beauvoir', 'value': 'Beauvoir'},
  {'label': 'Being And Time', 'value': 'Being And Time'},
  {'label': 'Berkeley', 'value': 'Berkeley'},
  {'label': 'Beyond Good And Evil', 'value': 'Beyond Good And Evil'},
@@ -87,7 +88,6 @@ def get_dropdown_list_stats():
  {'label': 'Science Of Logic', 'value': 'Science Of Logic'},
  {'label': 'Second Treatise On Government',
   'value': 'Second Treatise On Government'},
- {'label': 'Simone De Beauvoir', 'value': 'Simone De Beauvoir'},
  {'label': 'Smith', 'value': 'Smith'},
  {'label': 'Spinoza', 'value': 'Spinoza'},
  {'label': 'Stoicism', 'value': 'Stoicism'},
@@ -117,7 +117,10 @@ def get_dropdown_list_stats():
  {'label': 'Tractatus Logico-Philosophicus',
   'value': 'Tractatus Logico-Philosophicus'},
  {'label': 'Twilight Of The Idols', 'value': 'Twilight Of The Idols'},
+ {'label': 'Vindication Of The Rights Of Woman',
+  'value': 'Vindication Of The Rights Of Woman'},
  {'label': 'Wittgenstein', 'value': 'Wittgenstein'},
+ {'label': 'Wollstonecraft', 'value': 'Wollstonecraft'},
  {'label': 'Writing And Difference', 'value': 'Writing And Difference'}]
     return dropdown_list
 
