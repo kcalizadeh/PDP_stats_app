@@ -22,6 +22,7 @@ def get_dropdown_list_stats():
  {'label': 'Critique Of Practical Reason',
   'value': 'Critique Of Practical Reason'},
  {'label': 'Critique Of Pure Reason', 'value': 'Critique Of Pure Reason'},
+ {'label': 'Davis', 'value': 'Davis'},
  {'label': 'Deleuze', 'value': 'Deleuze'},
  {'label': 'Derrida', 'value': 'Derrida'},
  {'label': 'Descartes', 'value': 'Descartes'},
@@ -121,6 +122,7 @@ def get_dropdown_list_stats():
   'value': 'Vindication Of The Rights Of Woman'},
  {'label': 'Wittgenstein', 'value': 'Wittgenstein'},
  {'label': 'Wollstonecraft', 'value': 'Wollstonecraft'},
+ {'label': 'Women, Race, And Class', 'value': 'Women, Race, And Class'},
  {'label': 'Writing And Difference', 'value': 'Writing And Difference'}]
     return dropdown_list
 
